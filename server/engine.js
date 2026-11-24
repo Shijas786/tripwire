@@ -11,7 +11,7 @@ export async function run({ mode = 'shared', seed = 7, delay = 0, emit = () => {
   const world = generate(seed);
   const runId = `${mode === 'shared' ? 'm' : 's'}${Date.now().toString(36)}`;
   const mem = mode === 'shared' ? new MekoMemory(runId) : new SiloMemory();
-  emit({ k: 'start', mode, runId, events: world.events.length, attacks: world.attacks.length, accounts: Object.keys(world.accounts).length });
+  emit({ k: 'start', mode, runId, events: world.events.length, attacks: world.attacks.map((a) => ({ id: a.id, crew: a.crew, wave: a.wave, account: a.account, amount: a.amount })), accounts: Object.keys(world.accounts).length, ticks: world.events[world.events.length - 1].t });
   const packs = await mem.init((text) => emit({ k: 'setup', text }));
   emit({ k: 'ready', packs });
 
@@ -52,7 +52,8 @@ export async function run({ mode = 'shared', seed = 7, delay = 0, emit = () => {
     if (e.type === 'payee_add') rp.set(e.payee, e.t);
     if (atk) { atk.stage = e.stage; if (e.type === 'support') atk.seen.script = e.text; if (e.payee) atk.seen.payee = e.payee; atk.seen.device = atk.device; }
 
-    const pub = { id: e.id, t: e.t, type: e.type, account: e.account, agent, text: line, n: st.events };
+    // `truth` is ground truth for the demo's attack lanes only. The agents never read it.
+    const pub = { id: e.id, t: e.t, type: e.type, account: e.account, agent, text: line, n: st.events, truth: atk ? { id: atk.id, stage: e.stage } : null };
     if (!local.length) {
       st.routine++;
       emit({ k: 'event', e: pub, risk: 0 });
