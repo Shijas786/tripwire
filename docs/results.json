@@ -1,0 +1,1247 @@
+{
+  "silo": {
+    "mode": "silo",
+    "runId": "smwvbieua",
+    "events": 1787,
+    "routine": 1453,
+    "signals": 334,
+    "holds": [
+      {
+        "id": "dec_001",
+        "account": "acct_0049",
+        "risk": 0.74,
+        "truth": {
+          "attack": "atk_03",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 5
+        },
+        "factors": [
+          "transfer.large",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_002",
+        "account": "acct_0074",
+        "risk": 0.74,
+        "truth": {
+          "attack": "atk_01",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 5
+        },
+        "factors": [
+          "transfer.large",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_003",
+        "account": "acct_0035",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_04",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_004",
+        "account": "acct_0106",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_02",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_005",
+        "account": "acct_0093",
+        "risk": 0.74,
+        "truth": {
+          "attack": "atk_06",
+          "crew": "marrow",
+          "wave": 1,
+          "stage": 5
+        },
+        "factors": [
+          "transfer.large",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_006",
+        "account": "acct_0003",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_05",
+          "crew": "marrow",
+          "wave": 1,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_007",
+        "account": "acct_0036",
+        "risk": 0.95,
+        "truth": {
+          "attack": "atk_10",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 5
+        },
+        "factors": [
+          "pattern.payee",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_008",
+        "account": "acct_0016",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_12",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_009",
+        "account": "acct_0095",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_14",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_010",
+        "account": "acct_0078",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_16",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_011",
+        "account": "acct_0018",
+        "risk": 0.74,
+        "truth": {
+          "attack": "atk_09",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 5
+        },
+        "factors": [
+          "transfer.large",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_012",
+        "account": "acct_0037",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_17",
+          "crew": "vesper",
+          "wave": 2,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_013",
+        "account": "acct_0105",
+        "risk": 0.93,
+        "truth": {
+          "attack": "atk_11",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 4
+        },
+        "factors": [
+          "pattern.payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      },
+      {
+        "id": "dec_014",
+        "account": "acct_0060",
+        "risk": 0.74,
+        "truth": {
+          "attack": "atk_18",
+          "crew": "vesper",
+          "wave": 2,
+          "stage": 5
+        },
+        "factors": [
+          "transfer.large",
+          "transfer.new_payee",
+          "payee.new",
+          "payee.odd_device"
+        ]
+      }
+    ],
+    "falseHolds": 0,
+    "stopped": 14,
+    "takeovers": 5,
+    "compromised": 19,
+    "lost": 9568.73,
+    "saved": 52954.71,
+    "stageSum": 62,
+    "mekoCalls": 0,
+    "mekoMs": 0,
+    "ctxTokens": 0,
+    "rawTokens": 0,
+    "decisionsWithContext": 0,
+    "attacks": [
+      {
+        "id": "atk_01",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0074",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-4471",
+        "amount": 5076.43,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_02",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0106",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 3481.96,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_03",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0049",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 4959.22,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_04",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0035",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 2853.01,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_05",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0003",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 1959.67,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_06",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0093",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 4682.18,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_07",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0102",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 1879.53,
+        "lowAndSlow": true,
+        "state": "lost",
+        "stage": 5
+      },
+      {
+        "id": "atk_08",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0075",
+        "device": "fp_k77e02",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1721.38,
+        "lowAndSlow": true,
+        "state": "lost",
+        "stage": 5
+      },
+      {
+        "id": "atk_09",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0018",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-7742",
+        "amount": 6366.62,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_10",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0036",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1666.59,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_11",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0105",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 2648.35,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_12",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0016",
+        "device": "fp_k77e02",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1936.08,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_13",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0030",
+        "device": "fp_m3da94",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-8834",
+        "amount": 1804.95,
+        "lowAndSlow": true,
+        "state": "lost",
+        "stage": 5
+      },
+      {
+        "id": "atk_14",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0095",
+        "device": "fp_m9d2a4",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-1297",
+        "amount": 4774.88,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_15",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0104",
+        "device": "fp_m8ff9d",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-1297",
+        "amount": 2485.58,
+        "lowAndSlow": true,
+        "state": "lost",
+        "stage": 5
+      },
+      {
+        "id": "atk_16",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0078",
+        "device": "fp_mb2338",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-8834",
+        "amount": 2831.34,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_17",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0037",
+        "device": "fp_vbb821",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-4029",
+        "amount": 2022.7,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 4,
+        "stoppedAt": 4
+      },
+      {
+        "id": "atk_18",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0060",
+        "device": "fp_vd4bba",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-6613",
+        "amount": 7695.68,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 5,
+        "stoppedAt": 5
+      },
+      {
+        "id": "atk_19",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0056",
+        "device": "fp_v4f991",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-4029",
+        "amount": 1677.29,
+        "lowAndSlow": true,
+        "state": "lost",
+        "stage": 5
+      }
+    ],
+    "total": 1795,
+    "patterns": 19,
+    "meanStage": 4.428571428571429,
+    "seconds": 0.02,
+    "meko": null
+  },
+  "shared": {
+    "mode": "shared",
+    "runId": "mmwvbieuq",
+    "events": 1734,
+    "routine": 1453,
+    "signals": 281,
+    "holds": [
+      {
+        "id": "dec_001",
+        "account": "acct_0049",
+        "risk": 0.73,
+        "truth": {
+          "attack": "atk_03",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 3
+        },
+        "factors": [
+          "support.recovery",
+          "profile.contact",
+          "login.new_device",
+          "login.hosting",
+          "profile.odd_device"
+        ]
+      },
+      {
+        "id": "dec_002",
+        "account": "acct_0074",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_01",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_003",
+        "account": "acct_0035",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_04",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_004",
+        "account": "acct_0106",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_02",
+          "crew": "kestrel",
+          "wave": 1,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_005",
+        "account": "acct_0093",
+        "risk": 0.73,
+        "truth": {
+          "attack": "atk_06",
+          "crew": "marrow",
+          "wave": 1,
+          "stage": 1
+        },
+        "factors": [
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_006",
+        "account": "acct_0102",
+        "risk": 0.88,
+        "truth": {
+          "attack": "atk_07",
+          "crew": "marrow",
+          "wave": 1,
+          "stage": 3
+        },
+        "factors": [
+          "infra.device_shared",
+          "support.recovery",
+          "profile.contact",
+          "login.new_device",
+          "login.hosting",
+          "profile.odd_device"
+        ]
+      },
+      {
+        "id": "dec_007",
+        "account": "acct_0003",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_05",
+          "crew": "marrow",
+          "wave": 1,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_008",
+        "account": "acct_0104",
+        "risk": 0.73,
+        "truth": {
+          "attack": "atk_15",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 3
+        },
+        "factors": [
+          "support.recovery",
+          "profile.contact",
+          "login.new_device",
+          "login.hosting",
+          "profile.odd_device"
+        ]
+      },
+      {
+        "id": "dec_009",
+        "account": "acct_0075",
+        "risk": 0.79,
+        "truth": {
+          "attack": "atk_08",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 2
+        },
+        "factors": [
+          "pattern.script",
+          "support.recovery",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_010",
+        "account": "acct_0036",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_10",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_011",
+        "account": "acct_0056",
+        "risk": 0.73,
+        "truth": {
+          "attack": "atk_19",
+          "crew": "vesper",
+          "wave": 2,
+          "stage": 3
+        },
+        "factors": [
+          "support.recovery",
+          "profile.contact",
+          "login.new_device",
+          "login.hosting",
+          "profile.odd_device"
+        ]
+      },
+      {
+        "id": "dec_012",
+        "account": "acct_0030",
+        "risk": 0.79,
+        "truth": {
+          "attack": "atk_13",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 2
+        },
+        "factors": [
+          "pattern.script",
+          "support.recovery",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_013",
+        "account": "acct_0016",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_12",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_014",
+        "account": "acct_0095",
+        "risk": 0.79,
+        "truth": {
+          "attack": "atk_14",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 2
+        },
+        "factors": [
+          "pattern.script",
+          "support.recovery",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_015",
+        "account": "acct_0018",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_09",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_016",
+        "account": "acct_0078",
+        "risk": 0.79,
+        "truth": {
+          "attack": "atk_16",
+          "crew": "marrow",
+          "wave": 2,
+          "stage": 2
+        },
+        "factors": [
+          "pattern.script",
+          "support.recovery",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_017",
+        "account": "acct_0105",
+        "risk": 0.97,
+        "truth": {
+          "attack": "atk_11",
+          "crew": "kestrel",
+          "wave": 2,
+          "stage": 1
+        },
+        "factors": [
+          "pattern.device",
+          "infra.device_shared",
+          "login.new_device",
+          "login.hosting"
+        ]
+      },
+      {
+        "id": "dec_018",
+        "account": "acct_0037",
+        "risk": 0.73,
+        "truth": {
+          "attack": "atk_17",
+          "crew": "vesper",
+          "wave": 2,
+          "stage": 3
+        },
+        "factors": [
+          "support.recovery",
+          "profile.contact",
+          "login.new_device",
+          "login.hosting",
+          "profile.odd_device"
+        ]
+      },
+      {
+        "id": "dec_019",
+        "account": "acct_0060",
+        "risk": 0.79,
+        "truth": {
+          "attack": "atk_18",
+          "crew": "vesper",
+          "wave": 2,
+          "stage": 2
+        },
+        "factors": [
+          "pattern.script",
+          "support.recovery",
+          "login.new_device",
+          "login.hosting"
+        ]
+      }
+    ],
+    "falseHolds": 0,
+    "stopped": 19,
+    "takeovers": 0,
+    "compromised": 0,
+    "lost": 0,
+    "saved": 62523.44,
+    "stageSum": 34,
+    "mekoCalls": 1002,
+    "mekoMs": 0,
+    "ctxTokens": 9076,
+    "rawTokens": 837913,
+    "decisionsWithContext": 281,
+    "attacks": [
+      {
+        "id": "atk_01",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0074",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-4471",
+        "amount": 5076.43,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_02",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0106",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 3481.96,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_03",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0049",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 4959.22,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 3,
+        "stoppedAt": 3
+      },
+      {
+        "id": "atk_04",
+        "crew": "kestrel",
+        "wave": 1,
+        "account": "acct_0035",
+        "device": "fp_k3a91c",
+        "asn": "AS9009 M247 (hosting)",
+        "mule": "payee_M-9920",
+        "amount": 2853.01,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_05",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0003",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 1959.67,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_06",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0093",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 4682.18,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_07",
+        "crew": "marrow",
+        "wave": 1,
+        "account": "acct_0102",
+        "device": "fp_m19d44",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-2085",
+        "amount": 1879.53,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 3,
+        "stoppedAt": 3
+      },
+      {
+        "id": "atk_08",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0075",
+        "device": "fp_k77e02",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1721.38,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 2,
+        "stoppedAt": 2
+      },
+      {
+        "id": "atk_09",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0018",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-7742",
+        "amount": 6366.62,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_10",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0036",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1666.59,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_11",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0105",
+        "device": "fp_k3a91c",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 2648.35,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_12",
+        "crew": "kestrel",
+        "wave": 2,
+        "account": "acct_0016",
+        "device": "fp_k77e02",
+        "asn": "AS60068 Datacamp (hosting)",
+        "mule": "payee_M-5306",
+        "amount": 1936.08,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 1,
+        "stoppedAt": 1
+      },
+      {
+        "id": "atk_13",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0030",
+        "device": "fp_m3da94",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-8834",
+        "amount": 1804.95,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 2,
+        "stoppedAt": 2
+      },
+      {
+        "id": "atk_14",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0095",
+        "device": "fp_m9d2a4",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-1297",
+        "amount": 4774.88,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 2,
+        "stoppedAt": 2
+      },
+      {
+        "id": "atk_15",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0104",
+        "device": "fp_m8ff9d",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-1297",
+        "amount": 2485.58,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 3,
+        "stoppedAt": 3
+      },
+      {
+        "id": "atk_16",
+        "crew": "marrow",
+        "wave": 2,
+        "account": "acct_0078",
+        "device": "fp_mb2338",
+        "asn": "AS14061 DigitalOcean (hosting)",
+        "mule": "payee_M-8834",
+        "amount": 2831.34,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 2,
+        "stoppedAt": 2
+      },
+      {
+        "id": "atk_17",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0037",
+        "device": "fp_vbb821",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-4029",
+        "amount": 2022.7,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 3,
+        "stoppedAt": 3
+      },
+      {
+        "id": "atk_18",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0060",
+        "device": "fp_vd4bba",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-6613",
+        "amount": 7695.68,
+        "lowAndSlow": false,
+        "state": "stopped",
+        "stage": 2,
+        "stoppedAt": 2
+      },
+      {
+        "id": "atk_19",
+        "crew": "vesper",
+        "wave": 2,
+        "account": "acct_0056",
+        "device": "fp_v4f991",
+        "asn": "AS16276 OVH (hosting)",
+        "mule": "payee_M-4029",
+        "amount": 1677.29,
+        "lowAndSlow": true,
+        "state": "stopped",
+        "stage": 3,
+        "stoppedAt": 3
+      }
+    ],
+    "total": 1795,
+    "patterns": 17,
+    "meanStage": 1.7894736842105263,
+    "seconds": 56.031,
+    "meko": {
+      "signals": {
+        "agent_count": 5,
+        "artifact_count": 19,
+        "context_size": {
+          "tokens": 70807,
+          "knowledge": {
+            "count": 0,
+            "tokens": 0
+          },
+          "memories": {
+            "count": 351,
+            "tokens": 70200
+          },
+          "conversations": {
+            "count": 19,
+            "tokens": 607
+          }
+        },
+        "conversation_bytes": 2429,
+        "conversation_chunk_count": 19,
+        "conversation_count": 179,
+        "daily_activity": [
+          {
+            "date": "2026-11-24",
+            "hybrid": 0,
+            "kb": 0,
+            "memory": 351
+          }
+        ],
+        "datapack_id": "06b69699-8196-4b9d-b7e2-a6973917f854",
+        "extraction_rate": 0,
+        "human_count": 1,
+        "kb_bytes": 0,
+        "kb_chunk_count": 0,
+        "kb_file_count": 0,
+        "last_accessed_at": "2026-11-24T23:21:27.159026137Z",
+        "memory_bytes": 45175,
+        "memory_chunk_count": 351,
+        "memory_extraction_count": 0,
+        "savings_pct": 0,
+        "savings_requests": 0,
+        "score_high_total": 0,
+        "score_low_total": 0,
+        "score_mid_total": 0,
+        "tokens_if_raw_total": 0,
+        "tokens_saved_total": 0,
+        "tokens_sent_total": 0,
+        "total_requests": 351
+      },
+      "patterns": {
+        "agent_count": 5,
+        "artifact_count": 0,
+        "context_size": {
+          "tokens": 22399,
+          "knowledge": {
+            "count": 22,
+            "tokens": 22000
+          },
+          "memories": {
+            "count": 0,
+            "tokens": 0
+          },
+          "conversations": {
+            "count": 19,
+            "tokens": 399
+          }
+        },
+        "conversation_bytes": 1596,
+        "conversation_chunk_count": 19,
+        "conversation_count": 1,
+        "daily_activity": [
+          {
+            "date": "2026-11-24",
+            "hybrid": 281,
+            "kb": 0,
+            "memory": 0
+          }
+        ],
+        "datapack_id": "f514245d-a7d8-4974-ae59-fd2a37cb6084",
+        "extraction_rate": 0,
+        "human_count": 1,
+        "kb_bytes": 1773,
+        "kb_chunk_count": 22,
+        "kb_file_count": 2,
+        "last_accessed_at": "2026-11-24T23:21:26.979217789Z",
+        "memory_bytes": 0,
+        "memory_chunk_count": 0,
+        "memory_extraction_count": 0,
+        "savings_pct": 69.85761890336262,
+        "savings_requests": 280,
+        "score_high_total": 2,
+        "score_low_total": 872,
+        "score_mid_total": 192,
+        "tokens_if_raw_total": 3301000,
+        "tokens_saved_total": 2306000,
+        "tokens_sent_total": 995000,
+        "total_requests": 281
+      },
+      "promoted": 17,
+      "ids": {
+        "signals": "06b69699-8196-4b9d-b7e2-a6973917f854",
+        "patterns": "f514245d-a7d8-4974-ae59-fd2a37cb6084"
+      }
+    }
+  }
+}

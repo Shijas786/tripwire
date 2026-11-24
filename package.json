@@ -1,0 +1,27 @@
+{
+  "name": "tripwire",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-agent account-takeover defense with shared memory on the Meko Context Engine",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"node server/index.js\" \"vite\"",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "bench": "node server/bench.js",
+    "record": "node server/record.js",
+    "test": "node --test server/"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "framer-motion": "^11.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11"
+  }
+}
