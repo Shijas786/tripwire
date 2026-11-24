@@ -8,7 +8,7 @@ import { rest, mekoUrl } from './meko.js';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const app = express();
-const UUID = /^[0-9a-f-]{36}$/i;
+const ID = /^[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}$/i; // Meko ids: UUIDs, dashed or not
 
 app.get('/api/health', async (_req, res) => {
   try {
@@ -43,7 +43,7 @@ app.get('/api/race', async (req, res) => {
 // memories it produced and every Meko call the agents made for it. Each decision carries its ref.
 app.get('/api/trace', async (req, res) => {
   const { datapack, conversation, message } = req.query;
-  if (![datapack, conversation, message].every((x) => typeof x === 'string' && UUID.test(x))) return res.status(400).json({ error: 'Pass datapack, conversation and message ids.' });
+  if (![datapack, conversation, message].every((x) => typeof x === 'string' && ID.test(x))) return res.status(400).json({ error: 'Pass datapack, conversation and message ids.' });
   try {
     const data = await rest(`/datapacks/${datapack}/conversations/${conversation}`);
     const turn = (data.conversation?.thread || []).find((t) => t.message_id === message);
