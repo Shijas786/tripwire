@@ -42,6 +42,12 @@ export default function Trace({ d, load, onClose, Chip }) {
 
         {shared && (
           <>
+            {!!d.calls?.length && (
+              <>
+                <h4>Meko calls made to reach this decision</h4>
+                <div className="calls">{d.calls.map((c, i) => <span key={i} className="call ro">{c.tool}<i>{c.label}</i><b>{c.ms} ms</b></span>)}</div>
+              </>
+            )}
             <h4>The decision as stored in Meko</h4>
             {stored === undefined && <p className="muted">Reading the conversation turn back from Meko…</p>}
             {stored === null && <p className="muted">Stored trace not available in this session.</p>}
