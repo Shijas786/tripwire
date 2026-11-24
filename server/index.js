@@ -8,7 +8,7 @@ import { rest, mekoUrl } from './meko.js';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const app = express();
-const runs = new Map(); // runId -> { mem, decisions }
+const UUID = /^[0-9a-f-]{36}$/i;
 
 app.get('/api/health', async (_req, res) => {
   try {
@@ -28,12 +28,10 @@ app.get('/api/race', async (req, res) => {
   const delay = Math.max(0, Math.min(200, Number(req.query.delay) || 0));
   const send = (mode) => (msg) => { if (!ac.signal.aborted) res.write(`data: ${JSON.stringify({ mode, ...msg })}\n\n`); };
   try {
-    const [silo, shared] = await Promise.all([
+    await Promise.all([
       run({ mode: 'silo', seed, emit: send('silo'), signal: ac.signal }),
       run({ mode: 'shared', seed, delay, emit: send('shared'), signal: ac.signal }),
     ]);
-    runs.set(shared.result.st.runId, shared);
-    void silo;
     send('race')({ k: 'finished' });
   } catch (err) {
     send('race')({ k: 'error', error: err.message });
@@ -42,13 +40,15 @@ app.get('/api/race', async (req, res) => {
 });
 
 // The stored trace of one decision, read back from Meko: the turn, its plan and reasoning, the
-// memories it produced and every Meko call the agents made for it.
-app.get('/api/trace/:runId/:decision', async (req, res) => {
-  const r = runs.get(req.params.runId);
-  const d = r?.result.decisions.find((x) => x.id === req.params.decision);
-  if (!d?.ref?.message) return res.status(404).json({ error: 'No stored trace for that decision.' });
+// memories it produced and every Meko call the agents made for it. Each decision carries its ref.
+app.get('/api/trace', async (req, res) => {
+  const { datapack, conversation, message } = req.query;
+  if (![datapack, conversation, message].every((x) => typeof x === 'string' && UUID.test(x))) return res.status(400).json({ error: 'Pass datapack, conversation and message ids.' });
   try {
-    res.json({ turn: await r.mem.trace(d.ref), ref: d.ref });
+    const data = await rest(`/datapacks/${datapack}/conversations/${conversation}`);
+    const turn = (data.conversation?.thread || []).find((t) => t.message_id === message);
+    if (!turn) return res.status(404).json({ error: 'No stored trace for that decision.' });
+    res.json({ turn, ref: { datapack, conversation, message } });
   } catch (err) {
     res.status(502).json({ error: err.message });
   }

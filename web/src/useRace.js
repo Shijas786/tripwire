@@ -148,8 +148,8 @@ export function useRace() {
     const st = S.current;
     if (d.mode !== 'shared') return null;
     if (st.traces[d.id]) return st.traces[d.id];
-    if (source !== 'live') return null;
-    const r = await fetch(`api/trace/${st.shared.runId}/${d.id}`);
+    if (source !== 'live' || !d.ref?.message) return null;
+    const r = await fetch(`api/trace?${new URLSearchParams(d.ref)}`);
     if (!r.ok) return null;
     const j = await r.json();
     st.traces[d.id] = j;
