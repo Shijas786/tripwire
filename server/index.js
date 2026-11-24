@@ -60,5 +60,7 @@ if (existsSync(dist)) {
   app.get('*', (_req, res) => res.sendFile(path.join(dist, 'index.html')));
 }
 
+// The API spends the server's Meko token, so it listens on loopback unless HOST says otherwise.
 const port = Number(process.env.PORT || 8787);
-app.listen(port, () => console.log(`Tripwire API on http://localhost:${port} (Meko at ${mekoUrl})`));
+const host = process.env.HOST || '127.0.0.1';
+app.listen(port, host, () => console.log(`Tripwire API on http://${host}:${port} (Meko at ${mekoUrl})`));

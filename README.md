@@ -71,7 +71,7 @@ npm install
 npm run dev                                      # http://localhost:5173
 ```
 
-Tripwire reads the token from `meko token`. To point it somewhere else, set `MEKO_URL` and `MEKO_TOKEN`.
+Tripwire reads the token from `meko token`. To point it somewhere else, set `MEKO_URL` and `MEKO_TOKEN`. The API has no auth of its own and spends that token, so it listens on `127.0.0.1`; set `HOST` only on a network you trust. The playbooks are uploaded by path, so Meko must run on the same machine.
 
 | Command | What it does |
 |---|---|
