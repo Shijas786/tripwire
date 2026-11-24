@@ -93,7 +93,7 @@ export function useRace() {
     }
     st.clock = Math.min(clock, st.ticks);
     if (changed || q.replay) bump((n) => (n + 1) % 1e9);
-    const drained = !q.silo.length && !q.shared.length && (q.finished || (q.replay && clock > st.ticks + 5));
+    const drained = !q.silo.length && !q.shared.length && (q.finished || q.replay);
     if (drained && st.shared.done && st.silo.done) {
       setStatus('done'); sfx.finish();
       return;
@@ -110,7 +110,8 @@ export function useRace() {
     }
     const t = m.e?.t ?? m.d?.t ?? m.t;
     if (t != null) q.lastT[m.mode] = t;
-    m._t = m.k === 'done' ? 1e12 : m.k === 'start' || m.k === 'setup' || m.k === 'ready' ? -1 : q.lastT[m.mode];
+    // Live: results wait for the race to end. Replay: they follow the side's last recorded event.
+    m._t = m.k === 'done' ? (q.replay ? q.lastT[m.mode] + 1 : 1e12) : m.k === 'start' || m.k === 'setup' || m.k === 'ready' ? -1 : q.lastT[m.mode];
     if (m.mode === 'shared' && m._t < 1e12) q.liveClock = Math.max(q.liveClock, m._t);
     q[m.mode].push(m);
   };
@@ -133,8 +134,9 @@ export function useRace() {
       try {
         const rec = await (await fetch('recording.json')).json();
         S.current.traces = rec.traces || {};
-        for (const m of rec.log) ingest({ ...m });
         q.replay = { clock: -1, last: performance.now() };
+        for (const m of rec.log) ingest({ ...m });
+        q.replay.last = performance.now();
       } catch (err) { setError(`Could not load the recorded run: ${err.message}`); setStatus('error'); return; }
     }
     q.raf = requestAnimationFrame(loop);
