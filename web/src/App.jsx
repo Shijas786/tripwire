@@ -166,7 +166,7 @@ export default function App() {
         <div className="controls">
           <span className={`source ${source}`}>{source === 'live' ? '● Live on Meko' : source === 'replay' ? '● Replay of a recorded Meko run' : '○ Connecting'}</span>
           <div className="seg">{[1, 2, 4].map((s) => <button key={s} className={speed === s ? 'on' : ''} onClick={() => { setSpeedState(s); race.setSpeed(s); sfx.click(); }}>{s}×</button>)}</div>
-          <button className="ghost" onClick={() => setSound(!sound)} aria-label="Toggle sound">{sound ? '🔊 Sound on' : '🔇 Sound off'}</button>
+          <button className="ghost" onClick={() => setSound(!sound)} aria-label="Toggle sound">{sound ? '♪ Sound on' : '× Sound off'}</button>
           <button className="go" disabled={source === 'checking' || running} onClick={() => race.start(speed)}>{running ? 'Race running…' : status === 'done' ? '↻ Run again' : '▶ Start the race'}</button>
         </div>
       </header>
